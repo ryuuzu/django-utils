@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django_ryuutils_ryuuzu3118"
+version = "0.0.1"
+authors = [
+  { name="Utsav Gurmachhan Magar (ryuuzu)", email="me@ryuuzu.xyz" },
+]
+description = "A package of utilities for Django (template tags, etc.)"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/ryuuzu/django-utils/"
+"Bug Tracker" = "https://github.com/ryuuzu/django-utils/issues"
