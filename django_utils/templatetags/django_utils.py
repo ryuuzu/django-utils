@@ -46,3 +46,16 @@ def num_range(parser, token):
             % (fnctn, fnctn)
         )
     return RangeNode(num, context_name)
+
+
+@register.simple_tag
+def material_tailwind_cdn():
+    return (
+        f"<!-- stylesheet -->"
+        f"<link"
+        f'rel="stylesheet"'
+        f'href="https://unpkg.com/@material-tailwind/html@latest/styles/material-tailwind.css"'
+        f"/>"
+        f"<!-- script -->"
+        f'<script src="https://unpkg.com/@material-tailwind/html@latest/scripts/script-name.js"></script>'
+    )
